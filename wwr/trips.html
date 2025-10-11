@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore White Water Rafting trips, packages, and adventures. View trip details, photos, pricing, and contact us to book your adventure.">
+    <title>Trips</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="images/logo.png" alt="White Water Rafting Logo" />
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html" class="active">Trips</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero / Callout -->
+            <section id="trips-hero" class="hero">
+                <div class="hero-content">
+                    <h1>Trips & Adventures</h1>
+                    <p>Choose from a range of guided rafting trips — from family float trips to adrenaline-pumping white water runs. View details, photos, and available dates below.</p>
+                    <a class="btn primary" href="contact.html" aria-label="Contact us about trips">Contact Us to Book</a>
+                </div>
+                <figure class="hero-image">
+                    <img src="images/trips-hero.jpg" alt="Group rafting on white water rapids">
+                </figure>
+            </section>
+
+            <!-- Trip cards: non single-column layout (grid) -->
+            <section id="trips-gallery" class="grid">
+                <h2>Featured Trips</h2>
+
+                <article class="trip-card">
+                    <img src="images/adventure1.jpg" alt="Raft tackling big rapids">
+                    <div class="trip-card-body">
+                        <h3>Whitewater Rapids Expedition</h3>
+                        <p>Experience the thrill of Class IV rapids on this full-day guided run. Includes safety briefing, gear, and experienced guides.</p>
+                        <ul class="trip-features">
+                            <li>Duration: Full day (8–10 hrs)</li>
+                            <li>Difficulty: Advanced</li>
+                            <li>Price: $195 per person</li>
+                        </ul>
+                        <a class="btn" href="contact.html" aria-label="Contact about Whitewater Rapids Expedition">Inquire / Book</a>
+                    </div>
+                </article>
+
+                <article class="trip-card">
+                    <img src="images/adventure2.jpg" alt="Peaceful scenic raft on calm river">
+                    <div class="trip-card-body">
+                        <h3>Scenic River Float</h3>
+                        <p>Relaxing half-day float through scenic canyons — perfect for families and first-time rafters. Wildlife viewing and picnic options available.</p>
+                        <ul class="trip-features">
+                            <li>Duration: Half day (3–4 hrs)</li>
+                            <li>Difficulty: Easy</li>
+                            <li>Price: $85 per person</li>
+                        </ul>
+                        <a class="btn" href="contact.html" aria-label="Contact about Scenic River Float">Inquire / Book</a>
+                    </div>
+                </article>
+
+                <article class="trip-card">
+                    <img src="images/adventure3.jpg" alt="Group camping after a multi-day rafting trip">
+                    <div class="trip-card-body">
+                        <h3>Multi-Day Canyon Trip</h3>
+                        <p>Backcountry multi-day adventure with guided rafting, riverside camping, and full meals. Limited group sizes for an intimate experience.</p>
+                        <ul class="trip-features">
+                            <li>Duration: 3 days / 2 nights</li>
+                            <li>Difficulty: Moderate</li>
+                            <li>Price: $450 per person (all-inclusive)</li>
+                        </ul>
+                        <a class="btn" href="contact.html" aria-label="Contact about Multi-Day Canyon Trip">Inquire / Book</a>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Table of all trips -->
+            <section id="trips-table">
+                <h2>All Available Trips</h2>
+                <div class="table-wrap">
+                    <table>
+                        <caption>Available Trips, durations, difficulty levels and starting prices</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Trip</th>
+                                <th scope="col">Duration</th>
+                                <th scope="col">Difficulty</th>
+                                <th scope="col">Price (from)</th>
+                                <th scope="col">Next Available</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Whitewater Rapids Expedition</td>
+                                <td>Full day</td>
+                                <td>Advanced</td>
+                                <td>$195</td>
+                                <td>June 14, 2025</td>
+                            </tr>
+                            <tr>
+                                <td>Scenic River Float</td>
+                                <td>Half day</td>
+                                <td>Easy</td>
+                                <td>$85</td>
+                                <td>May 30, 2025</td>
+                            </tr>
+                            <tr>
+                                <td>Multi-Day Canyon Trip</td>
+                                <td>3 days</td>
+                                <td>Moderate</td>
+                                <td>$450</td>
+                                <td>July 1, 2025</td>
+                            </tr>
+                            <tr>
+                                <td>Family Beginner Trip</td>
+                                <td>Half day</td>
+                                <td>Easy</td>
+                                <td>$70</td>
+                                <td>Weekends</td>
+                            </tr>
+                            <tr>
+                                <td>Photography & Nature Float</td>
+                                <td>Full day</td>
+                                <td>Easy</td>
+                                <td>$120</td>
+                                <td>June–September</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+    
+            <section id="trips-cta" class="cta">
+                <h2>Ready to Book or Have Questions?</h2>
+                <p>Our team can help choose the right trip for your experience level and schedule. Reach out to secure your spot.</p>
+                <a class="btn large" href="contact.html" aria-label="Open Contact Us page">Contact Us</a>
+            </section>
+            <section id="add-trip">
+                <h2>Add New Trip</h2>
+                <form id="trip-form">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" required>
+                    
+                    <label for="start-date">Start Date:</label>
+                    <input type="date" id="start-date" name="start-date" required>
+                    
+                    <label for="end-date">End Date:</label>
+                    <input type="date" id="end-date" name="end-date" required>
+                    
+                    <button type="submit">Add Trip</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 White Water Rafting | Obodo Joshua (JoshGenius)</p>
+            <nav class="socialmedia">
+                <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="images/x-bw.svg" alt="Twitter"></a>
+                <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+            </nav>
+        </footer>
+    </body>
+</html>
